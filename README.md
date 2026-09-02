@@ -13,3 +13,4 @@ Repository configuration required for the paid path:
 
 No production credentials belong in this repository.
 R0 validation rerun..
+R0 validation rerun after config diagnostics.
