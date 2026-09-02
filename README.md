@@ -12,3 +12,4 @@ Repository configuration required for the paid path:
 - Secret `LIMEN_TELEGRAPH_PRIVATE_KEY`: a dedicated funded Base Sepolia test wallet key.
 
 No production credentials belong in this repository.
+R0 validation rerun.
