@@ -1,0 +1,22 @@
+name: Limen
+
+on:
+  pull_request:
+    types:
+      - opened
+      - synchronize
+      - reopened
+
+permissions:
+  contents: read
+
+jobs:
+  limen:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Evaluate release evidence
+        uses: kaelah971/limen@697aa46256935a52ff1490258470b8d1ceab1fb8
+        with:
+          github-token: ${{ github.token }}
+          telegraph-private-key: ${{ secrets.LIMEN_TELEGRAPH_PRIVATE_KEY }}
+          telegraph-engine-url: ${{ vars.TELEGRAPH_ENGINE_URL }}
