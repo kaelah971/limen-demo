@@ -15,8 +15,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Evaluate release evidence
-        uses: kaelah971/limen@697aa46256935a52ff1490258470b8d1ceab1fb8
+        uses: kaelah971/limen@0fd2494ee5390e12b7ec8a287aeb5bb7db0caf82
         with:
           github-token: ${{ github.token }}
           telegraph-private-key: ${{ secrets.LIMEN_TELEGRAPH_PRIVATE_KEY }}
           telegraph-engine-url: ${{ vars.TELEGRAPH_ENGINE_URL }}
+          usage-class: demo
