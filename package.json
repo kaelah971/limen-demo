@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "description": "Controlled Limen release-gate validation fixture",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "4.18.1"
+  }
 }
